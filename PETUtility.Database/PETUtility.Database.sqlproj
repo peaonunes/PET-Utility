@@ -7,7 +7,7 @@
     <Name>PETUtility.Database</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{bf0b296d-98a4-481b-bc16-05915e6952f4}</ProjectGuid>
+    <ProjectGuid>{5c2cbecf-ca97-4426-8252-08d222d1c9fd}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
@@ -57,5 +57,22 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Post-Deployment" />
+    <Folder Include="Pre-Deployment" />
+    <Folder Include="Publish" />
+    <Folder Include="Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Publish\DataIncremental.publish.xml" />
+    <None Include="Publish\DataRe-Create.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Pre-Deployment\Script.PreDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Post-Deployment\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Post-Deployment\Script.PostDeployment_InsertData.sql" />
   </ItemGroup>
 </Project>

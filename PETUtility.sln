@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PETUtility.Data", "PETUtili
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PETUtility.Business", "PETUtility.Business\PETUtility.Business.csproj", "{2ED6C990-D584-4CFE-ADA5-DEF2506AB69A}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PETUtility.Database", "PETUtility.Database\PETUtility.Database.sqlproj", "{5C2CBECF-CA97-4426-8252-08D222D1C9FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{2ED6C990-D584-4CFE-ADA5-DEF2506AB69A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ED6C990-D584-4CFE-ADA5-DEF2506AB69A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ED6C990-D584-4CFE-ADA5-DEF2506AB69A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C2CBECF-CA97-4426-8252-08D222D1C9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C2CBECF-CA97-4426-8252-08D222D1C9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C2CBECF-CA97-4426-8252-08D222D1C9FD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5C2CBECF-CA97-4426-8252-08D222D1C9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C2CBECF-CA97-4426-8252-08D222D1C9FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C2CBECF-CA97-4426-8252-08D222D1C9FD}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

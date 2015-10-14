@@ -14,6 +14,7 @@ namespace PETUtility.Data.Fundamentals
         public static class Global
         {
             public const string AplicationName = "PET-Utility";
+            public const string RegisterTitle = "Cadastro";
 
             public static class Error
             {
