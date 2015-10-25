@@ -1,4 +1,4 @@
-﻿@using PETUtility.Data.Fundamentals;
+﻿@using PETUtility.Data.Fundamentals.Localizations;
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,12 +13,20 @@
     <div class="navbar navbar-inverse navbar-fixed-top" id="menuGeneral">
             <ul class="nav navbar-nav">
                 <li class="nomesMenu">@Html.ActionLink("Home", "Index", "Home")</li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">@Localization.Global.Menu.Activities</a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink(Localization.Global.Menu.Board, "", "")</li>
+                        <li>@Html.ActionLink(Localization.Global.Menu.Calendar, "", "")</li>
+                        <li>@Html.ActionLink(Localization.Global.Menu.History, "", "")</li>
+                        <li>@Html.ActionLink(Localization.Global.Menu.CreatePoster, "", "")</li>
+                    </ul>
+                </li>
             </ul>
         <div class="container">
             @Html.Partial("_LoginPartial")
         </div>
     </div>
-
     <div class="container body-content">
         @RenderBody()
         <hr />

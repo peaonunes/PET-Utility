@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PETUtility.Web", "PETUtility.Web\PETUtility.Web.csproj", "{120C87D6-5B5A-4705-BB32-ED5205F45265}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PETUtility.Service", "PETUtility.Service\PETUtility.Service.csproj", "{4FCC52F9-AE8F-41AF-94C6-1D31775F1DBA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PETUtility.Data", "PETUtility.Data\PETUtility.Data.csproj", "{A19AAE19-B49A-4CFF-AE73-D4C4C56420C3}"
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{120C87D6-5B5A-4705-BB32-ED5205F45265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{120C87D6-5B5A-4705-BB32-ED5205F45265}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{120C87D6-5B5A-4705-BB32-ED5205F45265}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{120C87D6-5B5A-4705-BB32-ED5205F45265}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4FCC52F9-AE8F-41AF-94C6-1D31775F1DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4FCC52F9-AE8F-41AF-94C6-1D31775F1DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FCC52F9-AE8F-41AF-94C6-1D31775F1DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
