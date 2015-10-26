@@ -18,6 +18,7 @@ namespace PETUtility.Data.Fundamentals.Localizations
             public static class Error
             {
                 public const string EnumNotFound = "Enum não encontrado";
+                public const string LoginFail = "Login ou senha inválido";
             }
 
             public static class Menu

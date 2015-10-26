@@ -8,5 +8,6 @@ namespace PETUtility.Service.Services
 {
     public interface IService
     {
+        IPETianoService CreatePETianoService();
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using PETUtility.Data.Fundamentals.Models;
 
 namespace PETUtility.Data.Context
 {
@@ -13,6 +14,8 @@ namespace PETUtility.Data.Context
     /// </summary>
     public interface IContext : IDisposable
     {
+        IDbSet<PETiano> PETianos { get; set; }
+
         /// <summary>
         /// Setar o banco de dados
         /// </summary>

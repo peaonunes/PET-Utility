@@ -49,7 +49,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers.Impl\BaseBusinessProvider.cs" />
     <Compile Include="Providers.Impl\BusinessProvider.cs" />
+    <Compile Include="Providers.Impl\PETianoBusinessProvider.cs" />
     <Compile Include="Providers\IBusinessProvider.cs" />
+    <Compile Include="Providers\IPETianoBusinessProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PETUtility.Business", "PETU
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PETUtility.Database", "PETUtility.Database\PETUtility.Database.sqlproj", "{5C2CBECF-CA97-4426-8252-08D222D1C9FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PETUtility.Web", "PETUtility.Web\PETUtility.Web.csproj", "{8090B777-F6D6-425C-8D3E-5432C63E2241}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{5C2CBECF-CA97-4426-8252-08D222D1C9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C2CBECF-CA97-4426-8252-08D222D1C9FD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5C2CBECF-CA97-4426-8252-08D222D1C9FD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8090B777-F6D6-425C-8D3E-5432C63E2241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8090B777-F6D6-425C-8D3E-5432C63E2241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8090B777-F6D6-425C-8D3E-5432C63E2241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8090B777-F6D6-425C-8D3E-5432C63E2241}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

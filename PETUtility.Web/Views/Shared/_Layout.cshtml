@@ -1,0 +1,34 @@
+﻿@using PETUtility.Data.Fundamentals.Localizations;
+@using System.Web.Optimization;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - @Localization.Global.AplicationName</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" id="menuGeneral">
+        <ul class="nav navbar-nav">
+            <li class="nomesMenu">@Html.ActionLink("Login", "Index", "Login")</li>
+            <li class="nomesMenu">@Html.ActionLink("LogOut", "LogOut", "Login")</li>
+            @if (Request.Cookies[FormsAuthentication.FormsCookieName] == null)
+            {
+                <li class="nomesMenu">@Html.ActionLink("Criar", "Create", "PETiano")</li>
+            }
+        </ul>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

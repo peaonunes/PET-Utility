@@ -11,5 +11,10 @@ namespace PETUtility.Service.Services.Impl
     /// </summary>
     public class Service : BaseService, IService
     {
+        public IPETianoService CreatePETianoService()
+        {
+            return new PETianoService();
+        }
+
     }
 }

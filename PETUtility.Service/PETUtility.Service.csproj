@@ -41,7 +41,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services.Impl\BaseService.cs" />
+    <Compile Include="Services.Impl\PETianoService.cs" />
     <Compile Include="Services.Impl\Service.cs" />
+    <Compile Include="Services\IPETianoService.cs" />
     <Compile Include="Services\IService.cs" />
   </ItemGroup>
   <ItemGroup />
@@ -49,6 +51,10 @@
     <ProjectReference Include="..\PETUtility.Business\PETUtility.Business.csproj">
       <Project>{2ed6c990-d584-4cfe-ada5-def2506ab69a}</Project>
       <Name>PETUtility.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PETUtility.Data\PETUtility.Data.csproj">
+      <Project>{a19aae19-b49a-4cff-ae73-d4c4c56420c3}</Project>
+      <Name>PETUtility.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

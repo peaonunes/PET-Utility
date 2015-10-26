@@ -1,0 +1,23 @@
+#menuGeneral {
+    background-color: #f75909;
+    border: #f75909;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nomesMenu {
+    color: #ffffff;
+    font-family: Calibri;
+}
+
+.nomesMenu a {
+    color: #ffffff;
+}
+
+#box {
+    padding-top: 5%;
+}
+
+.erroMessage {
+    color: #d02424;
+}

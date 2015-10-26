@@ -11,5 +11,9 @@ namespace PETUtility.Business.Providers.Impl
     /// </summary>
     public sealed class BusinessProvider : BaseBusinessProvider, IBusinessProvider
     {
+        public IPETianoBusinessProvider CreatePETianoBusinessProvider()
+        {
+            return new PETianoBusinessProvider();
+        }
     }
 }
