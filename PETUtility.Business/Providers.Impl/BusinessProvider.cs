@@ -15,5 +15,10 @@ namespace PETUtility.Business.Providers.Impl
         {
             return new PETianoBusinessProvider();
         }
+
+        public IIdeaBusinessProvider CreateIdeaBusinessProvider()
+        {
+            return new IdeaBusinessProvider();
+        }
     }
 }

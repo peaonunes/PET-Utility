@@ -163,6 +163,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IdeaController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PETianoController.cs" />
     <Compile Include="Global.asax.cs">
@@ -175,6 +176,11 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Views\Idea\Create.cshtml" />
+    <Content Include="Views\Idea\Delete.cshtml" />
+    <Content Include="Views\Idea\Details.cshtml" />
+    <Content Include="Views\Idea\Edit.cshtml" />
+    <Content Include="Views\Idea\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[PETiano]
+(
+	[Id] INT NOT NULL IDENTITY(1,1), 
+    [Login] NVARCHAR(255) NULL, 
+    [Password] NCHAR(200) NULL, 
+    CONSTRAINT [PK_dbo.PETiano] PRIMARY KEY CLUSTERED ([Id] ASC) ON [PRIMARY]
+)

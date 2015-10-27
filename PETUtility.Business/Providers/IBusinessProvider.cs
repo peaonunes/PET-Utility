@@ -9,5 +9,6 @@ namespace PETUtility.Business.Providers
     public interface IBusinessProvider : IDisposable
     {
         IPETianoBusinessProvider CreatePETianoBusinessProvider();
+        IIdeaBusinessProvider CreateIdeaBusinessProvider();
     }
 }

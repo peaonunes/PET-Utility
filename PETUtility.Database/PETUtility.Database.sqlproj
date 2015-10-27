@@ -74,5 +74,10 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Post-Deployment\Script.PostDeployment_InsertData.sql" />
+    <Build Include="Tables\PETiano.sql" />
+    <Build Include="Tables\Ideas.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="PETUtility.Database.refactorlog" />
   </ItemGroup>
 </Project>

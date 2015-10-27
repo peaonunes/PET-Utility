@@ -16,5 +16,9 @@ namespace PETUtility.Service.Services.Impl
             return new PETianoService();
         }
 
+        public IIdeaService CreateIdeaService()
+        {
+            return new IdeaService();
+        }
     }
 }

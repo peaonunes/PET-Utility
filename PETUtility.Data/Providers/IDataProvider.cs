@@ -9,5 +9,6 @@ namespace PETUtility.Data.Providers
     public interface IDataProvider : IDisposable
     {
         IPETianoRepository CreatePETianoRepository();
+        IIdeaRepository CreateIdeaRepository();
     }
 }

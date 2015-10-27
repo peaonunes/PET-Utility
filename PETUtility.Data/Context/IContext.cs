@@ -15,6 +15,7 @@ namespace PETUtility.Data.Context
     public interface IContext : IDisposable
     {
         IDbSet<PETiano> PETianos { get; set; }
+        IDbSet<Idea> Ideas { get; set; }
 
         /// <summary>
         /// Setar o banco de dados

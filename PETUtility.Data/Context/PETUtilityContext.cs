@@ -20,6 +20,7 @@ namespace PETUtility.Data.Context
 		}
 
         public IDbSet<PETiano> PETianos { get; set; }
+        public IDbSet<Idea> Ideas { get; set; }
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
@@ -31,5 +32,7 @@ namespace PETUtility.Data.Context
 		{
 			this.Dispose(true);
 		}
+
+        public System.Data.Entity.DbSet<PETUtility.Data.Fundamentals.Models.IdeaViewModel> IdeaViewModels { get; set; }
 	}
 }

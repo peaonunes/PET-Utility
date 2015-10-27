@@ -24,6 +24,11 @@ namespace PETUtility.Data.Providers.Impl
             return new PETianoRepository(this._Context);
         }
 
+        public IIdeaRepository CreateIdeaRepository()
+        {
+            return new IdeaRepository(this._Context);
+        }
+
         public void Dispose()
         {
             if (_Context != null)
