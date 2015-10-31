@@ -1,39 +1,30 @@
 ﻿@model IEnumerable<PETUtility.Data.Fundamentals.Models.PETiano>
+@using PETUtility.Data.Fundamentals.Localizations;
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Gerenciar PETiano";
 }
 
-<h2>Index</h2>
+<div class="titleName">
+    <h2>@Localization.Global.Menu.ManagePETiano</h2>
+</div>
+<hr />
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Login)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Password)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Login)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Password)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
-
-</table>
+<div class="centralize">
+    <div class="container-fluid">
+        @foreach (var petiano in Model)
+        {
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <p id="petianoSizeName">@petiano.Login</p>
+                </div>
+                <div class="form-group col-md-2">
+                    <div class="editDeleteButton">
+                        <button type="submit" class="button" onclick="location.href='@Url.Action("Edit", "PETiano", new { id = petiano.Id })'"><span class="glyphicon glyphicon-pencil"></span></button>
+                        <button type="submit" class="button" onclick="location.href='@Url.Action("Delete", "PETiano", new { id = petiano.Id })'"><span class="glyphicon glyphicon-trash"></span></button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

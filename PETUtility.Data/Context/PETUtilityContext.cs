@@ -25,6 +25,7 @@ namespace PETUtility.Data.Context
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
 			modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            Database.SetInitializer<PETUtilityContext>(null);
 			base.OnModelCreating(modelBuilder);
 		}
 
@@ -32,7 +33,5 @@ namespace PETUtility.Data.Context
 		{
 			this.Dispose(true);
 		}
-
-        public System.Data.Entity.DbSet<PETUtility.Data.Fundamentals.Models.IdeaViewModel> IdeaViewModels { get; set; }
 	}
 }

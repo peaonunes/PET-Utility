@@ -14,6 +14,7 @@ namespace PETUtility.Data.Fundamentals.Localizations
         public static class Global
         {
             public const string AplicationName = "PET-Utility";
+            public const string Cancel = "Cancelar";
 
             public static class Error
             {
@@ -25,7 +26,7 @@ namespace PETUtility.Data.Fundamentals.Localizations
             {
                 public const string Register = "Cadastro";
                 public const string Login = "Login";
-                public const string LoginOff = "LoginOff";
+                public const string LogOut = "LogOut";
                 public const string Activities = "Atividades";
                 public const string Board = "Board";
                 public const string Calendar = "Calendário";
@@ -40,7 +41,17 @@ namespace PETUtility.Data.Fundamentals.Localizations
                 public const string PointsOfGuidelines = "Pontos de pautas";
                 public const string Feedback = "Feedback";
                 public const string Ideas = "Ideias";
+                public const string ManageSystem = "Configuração";
+                public const string ManagePETiano = "Gerenciar PETiano";
+                public const string UpdateAccount = "Atualizar conta";
             }
+        }
+
+        public static class PETiano
+        {
+            public const string EditPETiano = "Atualizar PETiano";
+            public const string CreatePETiano = "Criar PETiano";
+            public const string DeletePETiano = "Deletar PETiano";
         }
     }
 }

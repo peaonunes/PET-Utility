@@ -1,18 +1,39 @@
 #menuGeneral {
-    background-color: #f75909;
-    border: #f75909;
+    background: #f75909;
     color: #ffffff;
     text-decoration: none;
+    z-index: 1;
+    width: 100%;
+    height: 12%;
+    position: fixed;
 }
 
-nomesMenu {
+    #menuGeneral ul li {
+        display: inline-block;
+    }
+
+.menuNames {
     color: #ffffff;
     font-family: Calibri;
+    font-size: 140%;
+    width: 100%;
 }
 
-.nomesMenu a {
-    color: #ffffff;
-}
+    .menuNames li {
+        padding-left: 8%;
+        padding-top: 1%;
+    }
+
+    .menuNames a {
+        color: #ffffff;
+    }
+
+    .menuNames button {
+        color: #ffffff;
+        background: #f75909;
+        border: #f75909;
+        width: 100%;
+    }
 
 #box {
     padding-top: 5%;
@@ -20,4 +41,38 @@ nomesMenu {
 
 .erroMessage {
     color: #d02424;
+}
+
+.titleName {
+    padding-top: 12%;
+    padding-left: 15%;
+}
+
+.fieldSize {
+    width: 40%;
+}
+
+.centralize {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.buttonToRight {
+    margin-left: 25%;
+}
+
+.editDeleteButton {
+	display: inline;
+	float: right;
+    width: 100%;
+}
+
+.button {
+    background: #ffffff;
+    border: 1px solid #d7d6d6;
+    border-radius: 3px;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 12%;
+    padding-right: 12%;
 }

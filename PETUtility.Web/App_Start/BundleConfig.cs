@@ -21,7 +21,7 @@ namespace PETUtility.Web.App_Start
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css", "~/Content/basic.css", "~/Content/Views/home.css"));
+                      "~/Content/bootstrap.css", "~/Content/basic.css", "~/Content/Views/petiano.css"));
         }
     }
 }

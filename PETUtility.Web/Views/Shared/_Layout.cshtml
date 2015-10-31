@@ -12,19 +12,76 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" id="menuGeneral">
-        <ul class="nav navbar-nav">
-            <li class="nomesMenu">@Html.ActionLink("Login", "Index", "Login")</li>
-            <li class="nomesMenu">@Html.ActionLink("LogOut", "LogOut", "Login")</li>
-            @if (Request.Cookies[FormsAuthentication.FormsCookieName] == null)
-            {
-                <li class="nomesMenu">@Html.ActionLink("Criar", "Create", "PETiano")</li>
-            }
-        </ul>
-    </div>
+    <nav>
+        <nav id="menuGeneral">
+            @Html.AntiForgeryToken()
+            <div class="dropdown">
+                <ul class="nav navbar-nav navbar-left menuNames">
+                    @if (Request.Cookies[FormsAuthentication.FormsCookieName] != null)
+                    {
+                        <li>
+                            <button class="dropdown-toggle" data-toggle="dropdown">
+                                @Localization.Global.Menu.Activities
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink(Localization.Global.Menu.Board, "", "")</li>
+                                <li>@Html.ActionLink(Localization.Global.Menu.Calendar, "", "")</li>
+                                <li>@Html.ActionLink(Localization.Global.Menu.History, "", "")</li>
+                                <li>@Html.ActionLink(Localization.Global.Menu.CreatePoster, "", "")</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <button class="dropdown-toggle" data-toggle="dropdown">
+                                @Localization.Global.Menu.Financial
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink(Localization.Global.Menu.Payments, "", "")</li>
+                                <li>@Html.ActionLink(Localization.Global.Menu.Notifications, "", "")</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <button class="dropdown-toggle" data-toggle="dropdown">
+                                @Localization.Global.Menu.Meeting
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink(Localization.Global.Menu.Record, "", "")</li>
+                                <li>@Html.ActionLink(Localization.Global.Menu.RecordComment, "", "")</li>
+                                <li>@Html.ActionLink(Localization.Global.Menu.PointsOfGuidelines, "", "")</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <button class="dropdown-toggle" data-toggle="dropdown">
+                                @Html.ActionLink(Localization.Global.Menu.Feedback, "", "")
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="dropdown-toggle" data-toggle="dropdown">
+                                @Html.ActionLink(Localization.Global.Menu.Ideas, "", "")
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="dropdown-toggle" data-toggle="dropdown">
+                                @Localization.Global.Menu.ManageSystem
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink(Localization.Global.Menu.ManagePETiano, "Index", "PETiano")</li>
+                                <li>@Html.ActionLink(Localization.Global.Menu.UpdateAccount, "", "")</li>
+                                <li>@Html.ActionLink(Localization.Global.Menu.LogOut, "LogOut", "Login")</li>
+                            </ul>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </nav>
+    </nav>
+
     <div class="container body-content">
         @RenderBody()
-        <hr />
     </div>
 
     @Scripts.Render("~/bundles/jquery")

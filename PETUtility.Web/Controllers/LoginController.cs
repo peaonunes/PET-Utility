@@ -32,7 +32,7 @@ namespace PETUtility.Web.Controllers
             if (_IsValid(user.Login, user.Password))
             {
                 FormsAuthentication.SetAuthCookie(user.Login, false);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "PETiano");
             }
             else
             {
@@ -44,7 +44,7 @@ namespace PETUtility.Web.Controllers
         public ActionResult LogOut()
         {
             FormsAuthentication.SignOut();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Login");
         }
 
         private bool _IsValid(string login, string password)

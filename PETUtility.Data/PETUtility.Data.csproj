@@ -54,7 +54,6 @@
     <Compile Include="Fundamentals\Filters\PETianoFilter.cs" />
     <Compile Include="Fundamentals\IEntity.cs" />
     <Compile Include="Fundamentals\Localizations\Localization.cs" />
-    <Compile Include="Fundamentals\Models\IdeaViewModel.cs" />
     <Compile Include="Fundamentals\Models\Idea.cs" />
     <Compile Include="Fundamentals\Models\PETiano.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
